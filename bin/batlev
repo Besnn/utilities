@@ -1,0 +1,12 @@
+#!/bin/bash
+
+full=`cat /sys/class/power_supply/BAT0/charge_full`
+now=`cat /sys/class/power_supply/BAT0/charge_now`
+
+if command -v lolcat &>/dev/null; then
+echo "Battery percentage: " $(awk "BEGIN { print (($now/$full)*100)}")'%' | lolcat
+else
+echo -n "Battery percentage: "
+echo $(awk "BEGIN { print (($now/$full)*100)}")'%'
+fi
+exit 0

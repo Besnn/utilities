@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# on some laptops it's 'energy_now' and 'energy_full'
+
 full=`cat /sys/class/power_supply/BAT0/charge_full`
 now=`cat /sys/class/power_supply/BAT0/charge_now`
 

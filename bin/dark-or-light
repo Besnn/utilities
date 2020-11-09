@@ -1,0 +1,10 @@
+#!/bin/bash
+
+time=$(date +%H)
+dark=0
+
+if [[ $time -le 06 || $time -gt 21 ]]; then
+	dark=1
+fi
+
+echo $dark

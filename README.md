@@ -1,6 +1,6 @@
 # utilities
-Simple Shell Utilities
-
+Simple Shell Utilities  
+Should also be in [here](https://github.com/Besnn/misc-dotfiles/tree/master/scripts/bin).
 ## List
   * `empty`      empty trash can/recycle bin from terminal (doesn't prompt)  
   * `batlev`     show battery level (w/ [lolcat](https://github.com/busyloop/lolcat "lol") if in path; check script!)

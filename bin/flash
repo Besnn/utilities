@@ -1,0 +1,22 @@
+#!/bin/bash
+
+set -e
+
+FILE="$HOME/scripts/aux/flashfiles/concurrent_programming.tsv"
+
+main() {
+	IFS=$'\t' # required for read
+	read -a question <<< $(shuf -n 1 "$FILE")
+	echo "==============================================================="
+	echo "Category: ${question[0]}"
+	echo "Explain/Elaborate: ${question[1]}"
+	read dummy
+	echo "Answer: ${question[2]}"
+	echo "\n"
+}
+
+while true
+do
+	main
+done
+

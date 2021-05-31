@@ -1,0 +1,12 @@
+#!/bin/bash
+
+zathrc="/home/besnn/.config/zathura/zathurarc"
+dark=$(/home/besnn/scripts/bin/dark-or-light)
+
+if [[ $dark -eq 0 ]]; then
+	cat $zathrc | sed -i 's/set recolor true/set recolor false/g' $zathrc
+else
+	cat $zathrc | sed -i 's/set recolor false/set recolor true/g' $zathrc
+fi
+
+zathura $1

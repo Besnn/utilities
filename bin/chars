@@ -1,0 +1,32 @@
+#!/bin/bash
+
+input=$1" "$2
+
+case $input in
+"greek ") # breaks if there's no space idk why
+	echo -e "Αα\tΒβ\tΓγ\tΔδ\tΕεϵ\tΖζ\tΗη\tΘθ\tΙι\tΚκ\tΛλ\tΜμ";
+	echo -e "Νν\tΞξ\tΟο\tΠπ\tΡρ\tΣσς\tΤτ\tΥυ\tΦφϕ\tΧχ\tΨψ\tΩω";;
+"calcolo numerico")
+	printf "Finite Arithmetic Operators:\n
+	\t⊕ (add)\t⊖ (sub)\t⊝ (sub2)\t⊗ (mult)\n
+	\t⊙ (mult2)\t⊘ (div)\t⊚ (comp)\t⊛ (star)\n\n" | expand -t 4;
+	printf "Relations:\n
+	\t≅ (approx)\t≃ (asymp) \t≈ (almost)\n
+	\t∝ (prop)  \t≔ (by def)\n" | expand -t 4;
+	;;
+"indices ")
+	printf "Superscript:\n";
+	printf "x⁰ x¹ x² x³ x⁴ x⁵ x⁶ x⁷ x⁸ x⁹ x⁺ x⁻ x⁼ x⁽ x⁾\n";
+	printf "Subscript: \n";
+	printf "x₀ x₁ x₂ x₃ x₄ x₅ x₆ x₇ x₈ x₉ x₊ x₋ x₌ x₍ x₎\n";
+	printf "xₐ xₑ xₒ xₓ xₔ xₕ xₖ xₗ xₘ xₙ xₚ xₛ xₜ\n";
+	printf "Latin Superscript Capital\n";
+	printf "ᴬ ᴮ | ᴰ ᴱ | ᴳ ᴴ ᴵ ᴶ ᴷ ᴸ ᴹ ᴺ ᴼ ᴾ | ᴿ | ᵀ ᵁ ⱽ ᵂ | | |\n";
+	printf "Latin Superscript Smallcaps\n";
+	printf "| | | | | | | | ᶦ | | ᶫ | ᶰ | | | | | | ᶸ | | | | |\n";
+	printf "Latin Superscript Miniscule\n";	
+	printf "ᵃ ᵇ ᶜ ᵈ ᵉ ᶠ ᵍ ʰ ⁱ ʲ ᵏ ˡ ᵐ ⁿ ᵒ ᵖ | ʳ ˢ ᵗ ᵘ ᵛ ʷ ˣ ʸ ᶻ\n"; 
+	printf "Latin Subscript\n";
+	printf "ₐ | | | ₑ | | ₕ ᵢ ⱼ ₖ ₗ ₘ ₙ ₒ ₚ | ᵣ ₛ ₜ ᵤ ᵥ | ₓ | |\n"; 		
+	#TODO: add greek subscripts
+esac

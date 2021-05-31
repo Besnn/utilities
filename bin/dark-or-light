@@ -3,7 +3,7 @@
 time=$(date +%H)
 dark=0
 
-if [[ $time -le 06 || $time -gt 21 ]]; then
+if [[ $time -le 06 || $time -gt 20 ]]; then
 	dark=1
 fi
 

@@ -1,0 +1,9 @@
+Correctness	Safety Properties	Properties that must always be true.
+Correctness	Liveness Properties	Properties that must eventually be true.
+Correctness	Weak Fairness	Process continually makes request => eventually granted
+Correctness	Strong Fairness	Process makes request infinitely often => ev.tly granted
+Correctness	Linear Waiting	Process makes request => granted before others' are granted more than once
+Correctness	FIFO Waiting	(self expl.)
+Correctness	Difference between weak and strong fairness	think -------- vs -- -- -- --                 
+
+

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+uasm_dir=/home/besnn/junk/uasm
+$uasm_dir -DBuildDOS=1 -mz -Fl "${1%.lst}" -Fo "$2.exe" $1

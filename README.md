@@ -11,4 +11,4 @@ Should also be in [here](https://github.com/Besnn/misc-dotfiles/tree/master/scri
   * `flash`      flashcard script from [connormcd's](https://github.com/connermcd) channel _*nixcasts_
   * `notes`      access notion notes quickly
   * `spg/sponge` sPonGeCaSe
-  * `zathura-start` lame script is lame; uses `dark-or-light` to set _zathura's_ theme (obselete via C-I)
+  * `zathura-start` lame script is lame; uses `dark-or-light` to set _zathura's_ theme (obselete via `<C-i>`)
